@@ -1,0 +1,18 @@
+version: "3"
+services:
+    spoon:
+        build: .
+        environment:
+            - DISPLAY
+        volumes:
+            - /tmp/.X11-unix:/tmp/.X11-unix
+            - /etc/localtime:/etc/localtime:ro
+            - ./pdi/9.1/data-integration:/usr/local/pdi/9.1/data-integration
+            - ./files:/usr/local/files
+            - ./backup:/usr/local/backup
+            - ./kettle_props:/root/.kettle
+        networks:
+            - pdi_network
+networks:
+    pdi_network:
+        external: true

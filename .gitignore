@@ -3,3 +3,7 @@ pdi/files/*
 pdi/backup/*
 pdi/kettle_props/*
 pdi_repository_postgresql/postgres-data
+pdi_crontab/crontab
+pdi_crontab/scripts/*
+
+

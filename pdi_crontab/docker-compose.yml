@@ -1,16 +1,14 @@
 version: "3"
 services:
-    spoon:
+    pdi_crontab:
         build: .
-        environment:
-            - DISPLAY
         volumes:
-            - /tmp/.X11-unix:/tmp/.X11-unix
             - /etc/localtime:/etc/localtime:ro
             - ../pdi/versions/9.1/data-integration:/usr/local/pdi
             - ../pdi/files:/usr/local/files
             - ../pdi/backup:/usr/local/backup
             - ../pdi/kettle_props:/root/.kettle
+            - ./scripts:/usr/local/scripts
         networks:
             - pdi_network
 networks:

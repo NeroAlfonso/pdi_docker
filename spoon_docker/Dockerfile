@@ -6,4 +6,4 @@ WORKDIR /usr/local
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 \
     OPT=-Doracle.jdbc.timezoneAsRegion=false
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-CMD ["/bin/sh", "/usr/local/pdi/9.1/data-integration/spoon.sh"]
+CMD ["/bin/sh", "/usr/local/pdi/spoon.sh"]

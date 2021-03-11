@@ -1,0 +1,10 @@
+#docker run -it --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" --volume="/usr/local/bda/:/usr/local/bda/" bda-app
+#FROM openjdk:7
+FROM debian:9
+RUN apt-get update
+RUN apt-get install libwebkitgtk-1.0-0 -y
+#RUN apt-get install oracle-java8-installer -y
+RUN apt-get install default-jre -y
+COPY . /usr/localCOPY  /usr/
+WORKDIR /usr/local
+CMD ["/bin/sh", "/usr/local/pdi/9.1/data-integration/spoon.sh"]

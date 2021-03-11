@@ -3,4 +3,4 @@ spoon_docker/files/*
 spoon_docker/drivers/*
 spoon_docker/backup/*
 spoon_docker/kettle_props/*
-pdi_repository_postgresql/postgres-data/*
+pdi_repository_postgresql/postgres-data

@@ -1,6 +1,5 @@
-spoon_docker/pdi/*
-spoon_docker/files/*
-spoon_docker/drivers/*
-spoon_docker/backup/*
-spoon_docker/kettle_props/*
+pdi/versions/*
+pdi/files/*
+pdi/backup/*
+pdi/kettle_props/*
 pdi_repository_postgresql/postgres-data

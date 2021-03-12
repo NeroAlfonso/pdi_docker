@@ -1,0 +1,15 @@
+version: "3"
+services:
+    pdi_slave:
+        build: .
+        volumes:
+            - ../pdi/versions/9.1/data-integration:/usr/local/pdi
+            - ../pdi/files:/usr/local/files
+            - ../pdi/backup:/usr/local/backup
+        networks:
+            - pdi_network
+        ports:
+            - "8081:8081"
+networks:
+    pdi_network:
+        external: true

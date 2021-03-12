@@ -1,0 +1,23 @@
+<slave_config>
+	<masters>
+		<slaveserver>
+			<name>pdi_master</name>
+			<hostname>pdi_master</hostname>
+			<port>8080</port>
+			<username>MelonMusk</username>
+			<password>El0nM4ster</password>
+			<master>Y</master>
+		</slaveserver>
+	</masters>
+	<report_to_masters>Y</report_to_masters>
+	<slaveserver>
+ 		<name>pdi_slave1</name>
+	  	<hostname>pdi_slave</hostname>
+		<port>8081</port>
+		<username>MelonMusk</username>
+		<password>El0nM4ster</password>
+		<master>N</master>
+		<get_properties_from_master>pdi_master</get_properties_from_master>
+		<override_existing_properties>Y</override_existing_properties>
+	</slaveserver>
+</slave_config>

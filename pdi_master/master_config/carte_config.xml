@@ -1,0 +1,10 @@
+<slave_config>
+	 <slaveserver>
+ 		<name>pdi_master</name>
+	  	<hostname>pdi_master</hostname>
+		<port>8080</port>
+		<username>MelonMusk</username>
+		<password>El0nM4ster</password>
+		<master>Y</master>
+	</slaveserver>
+</slave_config>

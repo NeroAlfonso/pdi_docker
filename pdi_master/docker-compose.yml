@@ -1,0 +1,16 @@
+version: "3"
+services:
+    pdi_master:
+        build: .
+        volumes:
+            - ../pdi/versions/9.1/data-integration:/usr/local/pdi
+            - ../pdi/files:/usr/local/files
+            - ../pdi/backup:/usr/local/backup
+            - ../pdi/kettle_props:/root/.kettle
+        networks:
+            - pdi_network
+        ports:
+            - "8080:8080"
+networks:
+    pdi_network:
+        external: true

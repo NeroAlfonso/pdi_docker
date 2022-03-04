@@ -1,6 +1,7 @@
 version: "3"
 services:
     spoon:
+        network_mode: host
         image: spoonjava:1.0.0
         environment:
             - DISPLAY
@@ -11,8 +12,8 @@ services:
             - ../pdi/files:/usr/local/files
             - ../pdi/backup:/usr/local/backup
             - ../pdi/kettle_props:/root/.kettle
-        networks:
-            - main_network
-networks:
-    main_network:
-        external: true
+#        networks:
+#            - main_network
+#networks:
+#    main_network:
+#        external: true

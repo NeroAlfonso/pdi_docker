@@ -8,12 +8,7 @@ services:
         volumes:
             - /tmp/.X11-unix:/tmp/.X11-unix
             - /etc/localtime:/etc/localtime:ro
-            - ../pdi/versions/9.1/data-integration:/usr/local/pdi
-            - ../pdi/files:/usr/local/files
-            - ../pdi/backup:/usr/local/backup
-            - ../pdi/kettle_props:/root/.kettle
-#        networks:
-#            - main_network
-#networks:
-#    main_network:
-#        external: true
+            - ${VOLUMES_DIR}/pentaho/pdi/versions/9.1/data-integration:/usr/local/pdi
+            - ${VOLUMES_DIR}/pentaho/pdi/files:/usr/local/files
+            - ${VOLUMES_DIR}/pentaho/pdi/backup:/usr/local/backup
+            - ${VOLUMES_DIR}/pentaho/pdi/kettle_props:/root/.kettle

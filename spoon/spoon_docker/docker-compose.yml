@@ -2,7 +2,8 @@ version: "3"
 services:
     spoon:
         network_mode: host
-        image: spoonjava:1.0.0
+        image: pentahojava:1.0.0
+        entrypoint: /usr/local/pdi/spoon.sh
         environment:
             - DISPLAY
         volumes:
